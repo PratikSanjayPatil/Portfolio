@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+
+.container{
+    flex-direction: column;
+}
+
+.container a{
+    margin-top: 1.5rem;
+}
+
+a button{
+    width: 35rem;
+}
