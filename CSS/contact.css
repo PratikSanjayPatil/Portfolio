@@ -6,6 +6,14 @@
     font-style: normal;
 }
 
+.container{
+    flex-direction: column;
+}
+
+.gap{
+    border: 1px solid black;
+}
+
 Footer{
     display: flex;
     justify-content: center;

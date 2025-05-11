@@ -22,6 +22,7 @@ a button{
 .gap{
     height: 2rem;
     width: 100%;
+    border: 1px solid black;
 }
 
 Footer{
