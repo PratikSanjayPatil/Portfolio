@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratik Patil</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Bootstrap/Project/CSS/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Bootstrap/Project/CSS/contact.css">
+    <title>Contact</title>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgb(154 160 166);" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgb(154 160 166);" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="Img/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -23,49 +22,35 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="index.html">About</a>
+                    <a class="nav-link" aria-current="page" href="index.html">About</a>
                     <a class="nav-link" href="project.html">Projects</a>
                     <a class="nav-link" href="Resume.html">Resume</a>
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link active" href="contact.html">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
-    
-    <div class="container container.md d-flex justify-content-center align-items-center" style="min-height: 85.5vh;">
-        <div class="myInfo text-center">
-            <h1>I'm Pratik Patil</h1>
-            <p>MERN stack developer skilled in Bootstrap and Tailwind CSS.</p>
-            <div class="icon">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css"></i>
-                <i class="fa-brands fa-react"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-node"></i>
-                <img src="https://www.opc-router.de/wp-content/uploads/2021/03/mongodb_thumbnail.png" alt="">
-                <i class="fa-brands fa-bootstrap"></i>
-                <i class="fa-brands fa-python"></i>
-                
-            </div>
-            <br>
-            <p>Working with my hand to make magic happen on the internet. View my 
-                <span class="badge text-bg-secondary">Projects</span>
-                <span class="badge text-bg-secondary">Resume</span>
-                <span class="badge text-bg-secondary">Contact Me</span>
-                or send me an email at
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=official.pratikpatil3040@gmail.com"><span class="badge text-bg-secondary">official.pratikpatil3040@gmail.com</span></a>
-            </p>
-            <br>
-            <br>
-            <p>
-                <a href="Resume.html">
-                    See more about me
-                    <i class="fa-solid fa-arrow-right"  style="margin-left: 10px;"></i>
-                </a>
-            </p>
+
+    <div class="container container.md d-flex justify-content-center align-items-center" style="flex-direction: column; min-height: 85.5vh;">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/mgvklake" method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" placeholder="Enter Your Name" name="name" class="form-control" required>
         </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" placeholder="Enter Your Email" name="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea name="message" placeholder="Enter Your Message" class="form-control" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+        </form>
     </div>
 
+    <div class="gap"></div>
 
     <Footer>
         
@@ -75,8 +60,9 @@
         
     </Footer>
 
+    <script src="/Bootstrap/Project/JS/contact.js"></script>
 
-    <!-- Js for bootstrap -->
+    <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>

@@ -4,15 +4,6 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    scrollbar-width: none;
-}
-
-.container{
-    flex-wrap: wrap;
-}
-
-.card{
-    margin: 2rem 2rem;
 }
 
 Footer{
@@ -42,16 +33,6 @@ Footer i:hover{
     opacity: 1;
 }
 
-.gap{
-    height: 2rem;
-    width: 100%;
-}
-
-.icon{
-    font-size: 2rem;
-    padding: 1rem;
-}
-
-.icon i{
-    margin: 0 1rem;
+form{
+    width: 30rem;
 }
