@@ -10,10 +10,6 @@
     flex-direction: column;
 }
 
-.gap{
-    border: 1px solid black;
-}
-
 Footer{
     display: flex;
     justify-content: center;
@@ -43,4 +39,17 @@ Footer i:hover{
 
 form{
     width: 30rem;
+}
+
+
+@media (max-width:500px) {
+    form{
+        width: 20rem;
+    }
+}
+
+@media (max-width:400px) {
+    form{
+        width: 18rem;
+    }
 }
